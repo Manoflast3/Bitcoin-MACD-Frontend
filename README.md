@@ -41,5 +41,6 @@ http://nvd3.org/
 DataTable (jQuery)：
 https://datatables.net/
 
-**Useful resources:
+# Useful resources 
+
 https://github.com/dypsilon/frontend-dev-bookmarks
