@@ -3,7 +3,7 @@ Frontend for the Bitcoin. Created for the Tencent summer intern hackathon.
 
 
 
-# Resources 
+# Resources
 
 **可以用的时钟**
 
@@ -44,3 +44,5 @@ https://datatables.net/
 # Useful resources
 
 https://github.com/dypsilon/frontend-dev-bookmarks
+
+https://github.com/wbkd/awesome-d3
