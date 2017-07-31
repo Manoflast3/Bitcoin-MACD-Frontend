@@ -15,25 +15,25 @@ https://stackoverflow.com/questions/28415178/how-do-you-show-the-current-time-on
 
 **可以用的图标**
 
-Chart.js: 
+Chart.js:
 http://www.chartjs.org/
 
-Expandable Chart (D3): 
+Expandable Chart (D3):
 http://mbostock.github.io/d3/talk/20111018/area-gradient.html
 
-Fund visualizer (D3): 
+Fund visualizer (D3):
 http://fundvis-ywng.rhcloud.com/JPMProvident.html
 
-d3-stock (D3): 
+d3-stock (D3):
 https://github.com/arnauddri/d3-stock
 
 line stock (D3):
 https://bl.ocks.org/mbostock/3883245
 
-C3 chart: 
+C3 chart:
 http://c3js.org/
 
-nvd3 (d3): 
+nvd3 (d3):
 http://nvd3.org/
 
 **可以用的表格**
@@ -41,6 +41,6 @@ http://nvd3.org/
 DataTable (jQuery)：
 https://datatables.net/
 
-# Useful resources 
+# Useful resources
 
 https://github.com/dypsilon/frontend-dev-bookmarks
