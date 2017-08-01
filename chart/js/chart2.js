@@ -1,3 +1,4 @@
+
 var svg = d3.select("svg"),
     margin = {top: 20, right: 20, bottom: 30, left: 50},
     width = +svg.attr("width") - margin.left - margin.right,
@@ -16,7 +17,7 @@ var line = d3.line()
     .x(function(d) { return x(d.date); })
     .y(function(d) { return y(d.close); });
 
-d3.tsv("data.tsv", function(d) {
+d3.tsv("./data.tsv", function(d) {
   d.date = parseTime(d.date);
   d.close = +d.close;
   return d;
