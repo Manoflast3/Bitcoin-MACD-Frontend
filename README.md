@@ -2,6 +2,18 @@
 Frontend for the Bitcoin. Created for the Tencent summer intern hackathon.
 
 
+# To Run
+
+First, install Node’s http-server
+
+by running the command:
+
+npm install -g http-server
+
+then run the server. 
+
+http-server &
+This will start the server on http://localhost:8080 from the current working directory.
 
 # Resources
 
