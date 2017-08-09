@@ -1,6 +1,8 @@
 # Bitcoin-MACD-Frontend
 Frontend for the Bitcoin. Created for the Tencent summer intern hackathon.
 
+Django & D3 connection. 
+https://github.com/fgmacedo/django-d3-example
 
 # To Run
 
