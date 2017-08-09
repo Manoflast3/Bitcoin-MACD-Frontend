@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+</head>
+
+<body>
+    <div>
+        <table id="Record">
+            <thead>
+                <tr role="row">
+                    <th>ID</th>
+                    <th>date</th>
+                    <th>flag</th>
+                    <th>btnum</th>
+                    <th>price</th>
+                    <th>balance</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#Record').DataTable({
+            ajax: '/record',
+            paging: false,
+            columns: [
+                { data: 'id'},
+                { data: 'date'},
+                { data: 'flag'},
+                { data: 'btnum'},
+                { data: 'price'},
+                { data: 'balance'}
+            ]
+        });
+    })
+</script>
