@@ -1,42 +1,64 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 
 <head>
-<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>403 Access Forbidden</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 
 <body>
-    <div>
-        <table id="Record">
-            <thead>
-                <tr role="row">
-                    <th>ID</th>
-                    <th>date</th>
-                    <th>flag</th>
-                    <th>btnum</th>
-                    <th>price</th>
-                    <th>balance</th>
-                </tr>
-            </thead>
-        </table>
+    <div class="container">
+        <div class="row">
+            <!--Showing Here-->
+        </div>
+        <div class="row">
+            <!--chart code -->
+        </div>
+        <div class="row">
+            <h2 class="sub-header col-md-offset-1">交易记录</h2>
+            <div class="col-md-10 col-md-offset-1">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover" id="Record">
+                        <thead>
+                            <tr role="row">
+                                <th>ID</th>
+                                <th>date</th>
+                                <th>flag</th>
+                                <th>btnum</th>
+                                <th>price</th>
+                                <th>balance</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
 </html>
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/jquery.dataTables.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function () {
         $('#Record').DataTable({
             ajax: '/record',
             paging: false,
+            searching: false,
             columns: [
-                { data: 'id'},
-                { data: 'date'},
-                { data: 'flag'},
-                { data: 'btnum'},
-                { data: 'price'},
-                { data: 'balance'}
+                { data: 'id' },
+                { data: 'date' },
+                { data: 'flag' },
+                { data: 'btnum' },
+                { data: 'price' },
+                { data: 'balance' }
             ]
         });
     })
