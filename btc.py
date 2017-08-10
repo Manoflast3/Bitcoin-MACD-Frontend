@@ -1,9 +1,9 @@
 # coding=utf-8
 from flask import Flask, jsonify, send_from_directory, request
 from flask_sqlalchemy import SQLAlchemy
-
+from trade import HuobiService
 # Env
-PASSWORD = '123'
+TOKEN = '123'  # 控制器口令
 
 # Database Start #
 app = Flask(__name__, static_url_path='')  # MySQL上线时记得改路径 还有127.0.0.1
@@ -46,6 +46,11 @@ def index():
     return app.send_static_file("index.html")
 
 
+@app.route('/info')
+def Account_Info():
+    return HuobiService.getAccountInfo()
+
+
 @app.route('/<path:path>')  # 静态前端路径、带上线再换用NGINX处理
 def Static_Route(path):
     return send_from_directory('/static', path)
@@ -59,7 +64,7 @@ def Trade_Record():
 @app.route('/request', methods=['GET', 'POST'])  # 处理请求 响应post|get请求，并且校验密码是否符合，再执行action
 def Action():
     if request.method == 'GET':
-        if request.values.get("password") == PASSWORD:
+        if request.values.get("token") == TOKEN:
             action = request.values.get("action")
 
             # 在这里写控制代码 要求有开始&倒计时24h 、 调试用的结束、
