@@ -1,13 +1,13 @@
 # Bitcoin-MACD-Frontend
 Frontend for the Bitcoin. Created for the Tencent summer intern hackathon.
 
-Django & D3 connection. 
+Django & D3 connection.
 https://github.com/fgmacedo/django-d3-example
 
 # To Run
 
 First, install flask, flask-alchemysql through pip
-Next, run using the "python btc.py" command. It should be running through your localhost. 
+Next, run using the "python btc.py" command. It should be running through your localhost.
 
 # Resources
 
