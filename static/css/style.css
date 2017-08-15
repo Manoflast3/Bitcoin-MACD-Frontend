@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -37,7 +37,7 @@ h1 {
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Patterns - reusable parts of our design
 
@@ -62,9 +62,9 @@ Patterns - reusable parts of our design
   background-color: #4089a6;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main Components 
+Main Components
 
 -------------------------------- */
 body::after, body::before {
@@ -209,6 +209,11 @@ main p {
     font-size: 1.8rem;
     line-height: 2;
   }
+}
+
+h3 #timer {
+  font-family: "Open sans:800";
+  color: black;
 }
 
 .cd-cover-layer {
