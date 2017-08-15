@@ -1,0 +1,23 @@
+{
+  "name": "bitcoin-macd-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for the Bitcoin. Created for the Tencent summer intern hackathon.",
+  "main": "index.js",
+  "dependencies": {
+    "pubnub": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manoflast3/Bitcoin-MACD-Frontend.git"
+  },
+  "author": "Derek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Manoflast3/Bitcoin-MACD-Frontend/issues"
+  },
+  "homepage": "https://github.com/Manoflast3/Bitcoin-MACD-Frontend#readme"
+}
